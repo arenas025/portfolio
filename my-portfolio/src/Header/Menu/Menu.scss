@@ -1,0 +1,35 @@
+@import '../../variables';
+
+.menu{
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    &.active{
+        position: fixed;
+        z-index: 1;
+        justify-self: flex-end;
+        width: 40vw;
+        height: 100vh;
+        background-color: $dark-blue;
+        right: 0;
+        & .menu-info{
+        height: 100vh;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        & li{
+            padding-right: 20px;
+            & a{
+                color: white;
+                font-family: $principal-font;
+                font-size: 25px;
+                text-decoration: none;
+            }
+        }
+    }
+    }
+}

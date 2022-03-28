@@ -1,0 +1,50 @@
+@import '../../variables';
+
+.home{
+    
+    padding-top: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    &-fondo{
+        width: 100vw;
+        height: inherit;
+        background-image: url(../../../assets/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+            &::before {
+            position: absolute;
+            content:'';
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color:#000000b2;
+        }
+    }
+    &-text{
+        text-align: center;
+        position: relative;
+        & p{
+            &:first-child{
+                font-size: 30px;
+
+            }
+            color: white;
+            font-family: $principal-font;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        & span{
+            font-weight: bolder;
+            color:$medium-blue;
+            font-size: 30px;
+        }
+    }
+}
+
