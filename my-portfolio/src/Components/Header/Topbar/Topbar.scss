@@ -1,4 +1,4 @@
-@import '../../variables';
+@import '../../../_variables.scss';
 
 .topbar{
     position: fixed;
@@ -35,7 +35,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            display: flex;
             cursor: pointer;
             transform-origin: left;
             &-line1{
@@ -63,7 +62,7 @@
     }
     &.active{
         background-color: $dark-blue;
-        .topbar-left{
+        & .topbar-left{
             color: white;
         }
         & .topbar-right-menu-line1{
