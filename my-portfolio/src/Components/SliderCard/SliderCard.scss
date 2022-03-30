@@ -1,0 +1,9 @@
+.sliderCard{
+    &--list{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 200px;
+        padding: 0;
+    }
+}

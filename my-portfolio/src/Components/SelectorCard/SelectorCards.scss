@@ -1,0 +1,16 @@
+@import '../../variables';
+
+.selectorCard{
+    &__anchor{
+        &--div{
+            width: 10px;
+            height: 10px;
+            background-color:#002442a1;
+            border-radius: 100px;
+            text-align: center;
+            &:active{
+                background-color: $dark-blue;
+            }
+        }
+    }
+}
