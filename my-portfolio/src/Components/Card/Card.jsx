@@ -7,7 +7,7 @@ export const Card = ({skill, imgSrc}) => {
   const myRef=useRef()
     return (
     <div ref={myRef} onMouseOver={()=>setIsOn(true)} onMouseOut={()=>setIsOn(false)} className= {isOn ? 'card dark':'card'}>
-      <img src={imgSrc}/>
+      <img src={imgSrc} alt={skill}/>
       <h1>{skill}</h1>
     </div>
   )

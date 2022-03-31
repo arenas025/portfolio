@@ -20,8 +20,10 @@ export const Skills = () => {
           <Card skill='React' imgSrc={images.reactImg}/>
           <Card skill='Typescript' imgSrc={images.typescriptImg}/>
           <Card skill='Webpack' imgSrc={images.webpackImg}/>
-          <Card skill='Python' imgSrc='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png'/>
-          <Card skill='MySql' imgSrc='https://blog.artegrafico.net/wp-content/uploads/2019/10/mysql-logo.png'/>
+          <Card skill='Python' imgSrc={images.pythonImg}/>
+          <Card skill='MySql' imgSrc={images.mysqlImg}/>
+          <Card skill='Git' imgSrc={images.gitImg}/>
+          <Card skill='Vite' imgSrc='https://vitejs.dev/logo.svg'/>
         </Cards>
       </div>
     </div>

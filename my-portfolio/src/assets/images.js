@@ -11,6 +11,9 @@ import rickandmorty from './rick-and-morty.jpeg'
 import techtrans from './techtransf.jpeg'
 import google from './google.jpeg'
 import weather from './weather.jpeg'
+import python from './Python(1).png'
+import mysql from './mysql-logo(2).png'
+import git from './git-logo(1).png'
 
 const images= {
     javascriptImg:javascript,
@@ -25,7 +28,10 @@ const images= {
     rickandmortyImg:rickandmorty,
     techtransImg:techtrans,
     googleImg:google,
-    weatherImg:weather
+    weatherImg:weather,
+    pythonImg:python,
+    mysqlImg: mysql,
+    gitImg:git
 }
 
 export default images
