@@ -4,7 +4,7 @@ import { Menu } from '../Components/Header/Menu/Menu'
 import { Home } from '../Sections/Home/Home'
 import { Skills } from '../Sections/Skills/Skills'
 import { Portfolio } from '../Sections/Portfolio/Portfolio'
-import useOnView from 'react-useonview'
+import { Contact } from '../Sections/Contact/Contact'
 import './App.css'
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
       <Home/>
       <Skills/>
       <Portfolio/>
+      <Contact/>
     </div>
   )
 }

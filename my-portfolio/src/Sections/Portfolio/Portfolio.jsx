@@ -10,8 +10,6 @@ export const Portfolio = () => {
         <h2 className='portfolio--container__h2'>Scroll it!</h2>
         <ContainerCarousel/>
       </div>
-      
     </div>
-    
   )
 }
