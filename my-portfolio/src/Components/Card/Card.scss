@@ -2,13 +2,15 @@
 
 .card{
     display:flex;
-    height: 100px;
+    height: 70px;
+    width: 70px;
     justify-content: center;
     border-radius: 30px;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 3px 15px 7px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, -1px 3px 15px 7px rgba(0,0,0,0);
     & img{
-        width: 100px;
+        width: inherit;
+        height: inherit;
         border-radius: inherit;
         transition: 0.5s;
     }
@@ -18,7 +20,7 @@
         position: absolute;
         top: inherit;
         font-family: $principal-font;
-        font-size: 16px;
+        font-size: 13px;
         transition: 0.5s;
     }
     &.dark{

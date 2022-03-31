@@ -1,8 +1,8 @@
 import React from 'react'
 import { CarouselCard } from '../CarouselCard/CarouselCard'
 import { ProjectCard } from '../ProjectCard/ProjectCard'
-import { SliderCard } from '../SliderCard/SliderCard'
-import { SelectorCard } from '../SelectorCard/SelectorCard'
+// import { SliderCard } from '../SliderCard/SliderCard'
+// import { SelectorCard } from '../SelectorCard/SelectorCard'
 import images from '../../assets/images'
 import './ContainerCarousel.scss'
 
@@ -60,7 +60,7 @@ export const ContainerCarousel = () => {
             imgProject={images.batabitImg}
             />
         </CarouselCard>
-        <SliderCard>
+        {/* <SliderCard>
             <SelectorCard id='#1'/>
             <SelectorCard id='#2'/>
             <SelectorCard id='#3'/>
@@ -68,7 +68,7 @@ export const ContainerCarousel = () => {
             <SelectorCard id='#5'/>
             <SelectorCard id='#6'/>
             <SelectorCard id='#7'/>
-        </SliderCard>
+        </SliderCard> */}
     </div>
   )
 }

@@ -2,11 +2,11 @@
 
 
 .skills{
-    padding-top: 50px;
+    padding:50px 0 50px 0;
     display: flex;
     text-align: center;
     justify-content: center;
-    background-color: $dark-blue;
+    // background-color: $dark-blue;
     &--container{
         opacity: 1;
         background-color: white;
@@ -15,7 +15,7 @@
         margin: 10px;
         padding-bottom: 20px;
         -webkit-box-shadow: 0px 7px 34px 23px rgba(0,176,217,0.7); 
-        box-shadow: 0px 7px 34px 23px rgba(0,176,217,0.7);
+        box-shadow: 0px 7px 34px 3px rgba(0,176,217,0.7);
         transition: 1.5s;
     &.noVisible{
         opacity: 0;
@@ -24,6 +24,7 @@
     &--title{
         color: $medium-blue;
         font-size: 50px;
+        margin-top: 10px;
     }
 
 }
