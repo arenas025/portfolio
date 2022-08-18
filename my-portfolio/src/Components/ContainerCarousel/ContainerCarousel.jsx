@@ -59,16 +59,14 @@ export const ContainerCarousel = () => {
             urlRepository='https://github.com/arenas025/Batabit-project-frontend.github.io'
             imgProject={images.batabitImg}
             />
+            <ProjectCard
+              id={8}
+              title= 'E-commerce'
+              urlProject={'https://ecommerce1005.netlify.app/'}
+              urlRepository={'https://github.com/arenas025/e-commerce'}
+              imgProject={images.ecommerce}
+            />
         </CarouselCard>
-        {/* <SliderCard>
-            <SelectorCard id='#1'/>
-            <SelectorCard id='#2'/>
-            <SelectorCard id='#3'/>
-            <SelectorCard id='#4'/>
-            <SelectorCard id='#5'/>
-            <SelectorCard id='#6'/>
-            <SelectorCard id='#7'/>
-        </SliderCard> */}
     </div>
   )
 }
