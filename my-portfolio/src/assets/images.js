@@ -14,6 +14,7 @@ import weather from './weather.jpeg'
 import python from './Python(1).png'
 import mysql from './mysql-logo(2).png'
 import git from './git-logo(1).png'
+import ecommerce from './ecommerceImage.png'
 
 const images= {
     javascriptImg:javascript,
@@ -31,7 +32,8 @@ const images= {
     weatherImg:weather,
     pythonImg:python,
     mysqlImg: mysql,
-    gitImg:git
+    gitImg:git,
+    ecommerce: ecommerce
 }
 
 export default images
