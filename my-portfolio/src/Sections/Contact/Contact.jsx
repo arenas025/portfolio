@@ -18,12 +18,12 @@ return (
                     </a>
                     
                 </div>
-                <div className='contact--container__info--personalsite'>
+                {/* <div className='contact--container__info--personalsite'>
                     <a href='https://sergioarenas.com/'>
                         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Logo_Sitio_Web.png/546px-Logo_Sitio_Web.png'/>
                     </a>
                     
-                </div>
+                </div> */}
             </div>
             {/* <h2>... Or send me a message</h2> */}
         </div>

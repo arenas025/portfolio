@@ -16,12 +16,11 @@ export const Skills = () => {
         <Cards>
           <Card skill='HTML' imgSrc={images.htmlImg}/>
           <Card skill='CSS' imgSrc={images.cssImg}/>
+          <Card skill='SASS' imgSrc={images.sass}/>
           <Card skill='Javascript' imgSrc={images.javascriptImg}/>
           <Card skill='React' imgSrc={images.reactImg}/>
           <Card skill='Typescript' imgSrc={images.typescriptImg}/>
-          <Card skill='Webpack' imgSrc={images.webpackImg}/>
-          <Card skill='Python' imgSrc={images.pythonImg}/>
-          <Card skill='MySql' imgSrc={images.mysqlImg}/>
+          <Card skill='Redux' imgSrc={images.redux}/>
           <Card skill='Git' imgSrc={images.gitImg}/>
           <Card skill='Vite' imgSrc='https://vitejs.dev/logo.svg'/>
         </Cards>
