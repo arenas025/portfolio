@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import useOnView from 'react-useonview';
 import './Contact.scss'
 
 export const Contact = () => {
+    const [visible, setVisible]=useState(false)
+    const trigger = useOnView(() => setVisible(true));
+
 return (
     <div className='contact' id='contact'>
-        <div className='contact--container'>
+        <div ref={trigger} className={ visible ? 'contact--container' : 'contact--container-noVisible'}>
             <h1 className='contact--container__title'>Get in touch!</h1>
             <div className='contact--container__info'>
                 <div className='contact--container__info--github'>

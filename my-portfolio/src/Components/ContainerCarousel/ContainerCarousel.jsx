@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CarouselCard } from '../CarouselCard/CarouselCard'
 import { ProjectCard } from '../ProjectCard/ProjectCard'
-// import { SliderCard } from '../SliderCard/SliderCard'
-// import { SelectorCard } from '../SelectorCard/SelectorCard'
 import images from '../../assets/images'
 import './ContainerCarousel.scss'
+import useOnView from 'react-useonview'
 
 export const ContainerCarousel = () => {
+
+  const [visible, setVisible]=useState(false)
+  const trigger = useOnView(() => setVisible(true));
+
   return (
-    <div className='containerCarousel'>
+    <div className={ visible ? 'containerCarousel' : 'containerCarousel-noVisible' } ref={trigger}>
         <CarouselCard>
           <ProjectCard
               id={9}

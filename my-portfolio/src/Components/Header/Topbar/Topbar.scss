@@ -21,6 +21,31 @@
             color: $clear-blue;
         }
     }
+    &-desktop-right{
+        width: 50vw;
+        display: flex;
+        justify-content: end;
+        margin-right: 4%;
+        &-list{
+            display: flex;
+            list-style: none;
+            & li{
+                margin-left: 10px;
+                & a{
+                    text-decoration: none;
+                    color: $dark-blue;
+                }
+                &:hover{
+                    border-bottom: 1px solid $dark-blue;
+                    transition: transform .2s;
+                    transform: scale(1.09);
+                }
+            }
+        }
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+    }
     &-right{
         width:50vw;
         height: 50px;
@@ -57,7 +82,9 @@
                 transition: 1s;
             }
         }
-        
+        @media screen and (min-width:700px) {
+            display: none;        
+        }
     }
     &.active{
         background-color: $dark-blue;

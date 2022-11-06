@@ -8,7 +8,6 @@ import './Skills.scss'
 export const Skills = () => {
   const [visible, setVisible]=useState(false)
   const trigger = useOnView(() => setVisible(true));
-  console.log(visible)
   return (
     <div ref={trigger} className='skills' id='skills'>
       <div className= {visible ?'skills--container':'skills--container noVisible'}>

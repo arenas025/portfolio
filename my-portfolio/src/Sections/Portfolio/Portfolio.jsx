@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import useOnView from 'react-useonview'
 import { ContainerCarousel } from '../../Components/ContainerCarousel/ContainerCarousel'
 import './Portfolio.scss'
 
 export const Portfolio = () => {
+  const [visible, setVisible]=useState(false)
+  const trigger = useOnView(() => setVisible(true));
   return (
     <div className='portfolio' id='portfolio'>
       <div className='portfolio--container'>

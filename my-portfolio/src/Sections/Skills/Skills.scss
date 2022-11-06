@@ -6,17 +6,18 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    // background-color: $dark-blue;
+    background: url(https://img.freepik.com/vector-gratis/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpg?w=900&t=st=1667688148~exp=1667688748~hmac=bc2bd22…);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     &--container{
         opacity: 1;
-        background-color: white;
         width: 90vw;
         border-radius: 20px;
         margin: 10px;
         padding-bottom: 20px;
-        -webkit-box-shadow: 0px 7px 34px 23px rgba(0,176,217,0.7); 
-        box-shadow: 0px 7px 34px 3px rgba(0,176,217,0.7);
-        transition: 1.5s;
+        transition: all 2s ;
+        transition-timing-function:cubic-bezier(.06,.85,1,1.04);        
     &.noVisible{
         opacity: 0;
     }
@@ -26,5 +27,4 @@
         font-size: 50px;
         margin-top: 10px;
     }
-
 }
