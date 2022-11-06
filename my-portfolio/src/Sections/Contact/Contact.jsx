@@ -13,12 +13,12 @@ return (
             <div className='contact--container__info'>
                 <div ref={trigger} className='contact--container__info--github'>
                     <a href='https://www.linkedin.com/in/sergio-arenas/'>
-                        <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' />
+                        <img alt='linkedin-img' src='https://cdn-icons-png.flaticon.com/512/174/174857.png' />
                     </a>
                 </div>
                 <div className='contact--container__info--linkedin'>
                     <a href='https://github.com/arenas025'>
-                        <img src='https://cdn-icons-png.flaticon.com/512/38/38401.png'/>    
+                        <img alt='github-img' src='https://cdn-icons-png.flaticon.com/512/38/38401.png'/>    
                     </a>
                     
                 </div>

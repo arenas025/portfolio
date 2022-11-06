@@ -18,7 +18,7 @@ export const ContainerCarousel = () => {
               title='Pokedux'
               urlProject={'https://pokedux123.netlify.app/'}
               urlRepository={'https://github.com/arenas025/pokedux'}
-              imgProject={images.pokedux}
+              imgProject={images.pokedux} 
             />
             <ProjectCard
               id={8}

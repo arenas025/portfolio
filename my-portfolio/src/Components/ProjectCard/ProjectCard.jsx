@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import useOnView from 'react-useonview';
+import React from 'react'
 
 import './ProjectCard.scss'
 
@@ -9,7 +8,7 @@ export const ProjectCard = ({title,imgProject,urlProject,urlRepository,id}) => {
 return (
     <li id={id} className={'projectCard '+id}>
         <div className= 'projectCard--container'>
-            <img className='projectCard--container__img' src={imgProject}/>
+            <img alt={title} className='projectCard--container__img' src={imgProject}/>
             <h1 className='projectCard--container__h1'>{title}</h1>
             <div className='projectCard--container__buttons'>
                 <button className='projectCard--container__buttons--goLive'>
