@@ -8,10 +8,10 @@ export const Contact = () => {
 
 return (
     <div className='contact' id='contact'>
-        <div ref={trigger} className={ visible ? 'contact--container' : 'contact--container-noVisible'}>
+        <div className={ visible ? 'contact--container' : 'contact--container-noVisible'}>
             <h1 className='contact--container__title'>Get in touch!</h1>
             <div className='contact--container__info'>
-                <div className='contact--container__info--github'>
+                <div ref={trigger} className='contact--container__info--github'>
                     <a href='https://www.linkedin.com/in/sergio-arenas/'>
                         <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' />
                     </a>

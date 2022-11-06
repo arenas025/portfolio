@@ -19,6 +19,7 @@
         background-size: cover;
         background-position: center;
         transition: all 1s ease-in;
+        animation-delay: 1s;
         &-noVisible{
         transform: scale(0);
     }
