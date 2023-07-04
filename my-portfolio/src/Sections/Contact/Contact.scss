@@ -1,6 +1,5 @@
 @import '../../variables';
 
-
 .contact{
     display: flex;
     justify-content: center;
@@ -15,7 +14,7 @@
         font-family: $principal-font;
         background-color: white;
         border-radius: 20px;
-        background:url('https://img.freepik.com/vector-gratis/fondo-escritorio-minimo-vector-diseno-abstracto-blanco_53876-135921.jpg?w=740&t=st=1667688927~exp=1667689527~hmac=54d637557093aaf25e030b9ba21c889fb3a3b6aff516e764ff90c2716c9224fc');
+        background:url('../../assets/backgroundContacto.png');
         background-size: cover;
         background-position: center;
         transition: all 1s ease-in;

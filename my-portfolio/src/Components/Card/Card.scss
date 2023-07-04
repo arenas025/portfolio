@@ -4,15 +4,18 @@
     display:flex;
     height: 70px;
     width: 70px;
+    align-items: center;
     justify-content: center;
-    border-radius: 30px;
+    background: white;
+    border-radius: 100%;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 3px 15px 7px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, -1px 3px 15px 7px rgba(0,0,0,0);
     & img{
         width: inherit;
         height: inherit;
-        border-radius: inherit;
+        border-radius: 100%;
         transition: 0.5s;
+        object-fit: contain;
     }
     & h1{
         align-self: center;
@@ -21,16 +24,26 @@
         top: inherit;
         font-family: $principal-font;
         font-size: 13px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: 0.5s;
     }
     &.dark{
         & img{
+            width: 70px;
+            height: 70px;
             background-color: rgba(0,0,0,0.8);
             filter:brightness(0.05);
         }
         & h1{
             opacity: 1;
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
     
