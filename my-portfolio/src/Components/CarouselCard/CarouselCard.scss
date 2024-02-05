@@ -4,14 +4,14 @@
     align-items: flex-start;
     text-align: center;
     width: 95vw;
-    max-width: 800px;
+    max-width: 1300px;
     // overflow: hidden;
     &--list{
         width:inherit;
         max-width: inherit;
         height: inherit;
         display: flex;
-        padding: 10px;
+        padding: 0px;
         list-style: none;
         gap: 30px;
         overflow-x: scroll;

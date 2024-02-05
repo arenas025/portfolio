@@ -22,7 +22,15 @@ import techtrans from './techtransf.png'
 import typescript from './typescript.png'
 import weather from './weather.png'
 import webpack from './webpack.png'
-import tailwind from './tailwind.png'
+import tailwind from './tailwind.png' 
+import pokeduxMobile from './pokedux-mobile.png'
+import batabitMobile from './batabit-mobile.png'
+import weatherMobile from './weather-mobile.png'
+import ipTrackerMobile from './ip-tracker-mobile.png'
+import chatInterfaceMobile from './chat-interface-mobile.png'
+import artGalleryMobile from './art-gallery-mobile.png'
+import artGallery from  './art gallery.png'
+import ipTracker from './ip-tracker.png'
 
 
 
@@ -51,7 +59,15 @@ const images= {
     redux,
     github,
     linkedin,
-    tailwind
+    tailwind,
+    pokeduxMobile,
+    batabitMobile,
+    weatherMobile,
+    ipTrackerMobile,
+    chatInterfaceMobile,
+    artGalleryMobile,
+    artGallery,
+    ipTracker
 }
 
 export default images

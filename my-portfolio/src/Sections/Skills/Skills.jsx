@@ -12,13 +12,13 @@ export const Skills = () => {
         <Cards>
           <Card skill="Javascript" imgSrc={images.javascript} />
           <Card skill="Typescript" imgSrc={images.typescript} />
-          <Card skill="Java" imgSrc={images.java} />
-          <Card skill="MySql" imgSrc={images.mysql} />
-          <Card skill="SASS" imgSrc={images.sass} />
-          <Card skill="Tailwind" imgSrc={images.tailwind} />
+          {/* <Card skill="Java" imgSrc={images.java} /> */}
           <Card skill="React" imgSrc={images.react} />
+          <Card skill="Tailwind" imgSrc={images.tailwind} />
           <Card skill="React Native" imgSrc={images.react} />
+          <Card skill="SASS" imgSrc={images.sass} />
           <Card skill="NestJS" imgSrc={images.nest} />
+          <Card skill="MySql" imgSrc={images.mysql} />
           <Card skill="Git" imgSrc={images.git} />
         </Cards>
       </div>
