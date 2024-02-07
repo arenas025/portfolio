@@ -6,11 +6,11 @@ import './ContainerCarousel.scss'
 
 export const ContainerCarousel = () => {
 
-   const [width, setWidth] = useState(window.innerHeight);
-   window.addEventListener("resize", () => {
-     const width = window.innerWidth;
-     setWidth(width);
-   });
+  const [width, setWidth] = useState(window.innerWidth);
+  window.addEventListener("resize", () => {
+    const width = window.innerWidth;
+    setWidth(width);
+  });
 
   return (
     <div className="containerCarousel">

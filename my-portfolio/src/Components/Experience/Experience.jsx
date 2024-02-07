@@ -1,18 +1,11 @@
 import React from 'react'
 import { ExperienceCard } from '../ExperiencieCard/ExperienceCard'
+import './Experience.scss'
 
 export const Experience = () => {
   return (
     <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: 200,
-        marginTop: 20,
-        width: "100%",
-        height: "100%",
-      }}
+      className='experience'
     >
       <ExperienceCard
         description={[
@@ -38,7 +31,6 @@ export const Experience = () => {
         period={"(1 year - 2 months)"}
         stack={"React Native, TypeScript, NextJS, NestJS, SQL, Tailwind"}
       />
-      {/* <ExperienceCard /> */}
     </div>
   );
 }

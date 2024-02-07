@@ -4,6 +4,7 @@
 .portfolio{
     display: flex;
     justify-content: center;
+//          
     &--container{
         padding-bottom: 30px;
         padding-top: 30px;
@@ -11,9 +12,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100vw;
-        font-family: $principal-font;
-        background: url('../../assets/backgroundProjects.png');
+        font-family: Raleway, sans-serif;
+        // background: url('../../assets/backgroundProjects.png');
         background-position: center;
         background-size: cover;
         &__h1{

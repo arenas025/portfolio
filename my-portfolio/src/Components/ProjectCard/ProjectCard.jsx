@@ -9,18 +9,20 @@ export const ProjectCard = ({
   urlRepository,
   id,
 }) => { 
-    const [width, setWidth] = useState(window.innerHeight)
 
-    console.log(width)
-    window.addEventListener("resize",()=>{
-        const width = window.innerWidth;
-        setWidth(width);
-})
+  const [width, setWidth] = useState(window.innerWidth)
+
+  window.addEventListener("resize",()=>{
+    const width = window.innerWidth;
+    setWidth(width);
+  })
 
 
 
   return (
-    <li id={id} className={`projectCard ${id} ${width<600 ? "mobile": ''}`}>
+    <li id={id} className={`projectCard ${id} 
+    }
+    `}>
       <div className="projectCard--container">
         <img
           alt={title}

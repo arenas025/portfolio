@@ -1,0 +1,28 @@
+@import '../../variables';
+@import "'../../../../mixins";
+
+.sections{
+  display: flex;
+  height: 100px;
+  width: 60%;
+  flex-direction: column;
+  &--wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@include media-small {
+  .sections{
+    margin-top: 100px;
+    &--wrapper{
+      width: 90vw;
+      align-self: center;
+      gap: 15px;
+    }
+  }
+}
+

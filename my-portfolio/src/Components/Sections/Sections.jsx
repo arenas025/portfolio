@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
-import { TabComponent } from '../TabComponent/TabComponent';
+import React, { Suspense, useState } from 'react';
+import { Portfolio } from '../../Sections/Portfolio/Portfolio';
+import { Skills } from '../../Sections/Skills/Skills';
 import { Experience } from '../Experience/Experience';
+import { TabComponent } from '../TabComponent/TabComponent';
+import './Sections.scss'
 
 export const Sections = () => {
 
@@ -8,17 +11,21 @@ export const Sections = () => {
     {
       name: "Experience",
       isActive: false,
-      component:<Experience/>,
+      component: <Experience />,
     },
     {
       name: "Projects",
       isActive: false,
-      component: <div>Proyectos</div>,
+      component: <Portfolio />,
     },
     {
       name: "Skills",
       isActive: false,
-      component: <div>Skills</div>,
+      component: (
+        <Suspense fallback={()=><p>Loading...</p>}>
+          <Skills />
+        </Suspense>
+      ),
     },
   ];
 
@@ -32,23 +39,8 @@ export const Sections = () => {
   }
 
   return (
-    <div
-      style={{
-        display: "flex",
-        height: 100,
-        width: "60%",
-        flexDirection: "column",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          gap: 30,
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+    <div className='sections'>
+      <div className='sections--wrapper'>
         {section.map((item) => (
           <TabComponent
             onClick={() => {

@@ -1,3 +1,7 @@
+@import '../../variables';
+@import "'../../../../mixins";
+
+
 .tabComponent{
   width: 200px;
   height:40px;
@@ -12,18 +16,41 @@
   transition-duration: 400ms;
   &:hover{
     cursor: pointer;
-  }
-}
-
-.active{
-  background-color: #FF4766;
+     background-color: $red;
   border: none;
-  -webkit-box-shadow: -2px 1px 22px 3px rgba(255,71,102,1);
--moz-box-shadow: -2px 1px 22px 3px rgba(255,71,102,1);
-box-shadow: -2px 1px 22px 3px rgba(255,71,102,1);
+  -webkit-box-shadow: -2px 1px 22px 3px $red;
+-moz-box-shadow: -2px 1px 22px 3px $red;
+box-shadow: -2px 1px 22px 3px $red;
   transition-duration: 600ms;
 
   & > p{
     color:white;
+  }
+  }
+
+}
+
+.active{
+  background-color: $red;
+  border: none;
+  -webkit-box-shadow: -2px 1px 22px 3px $red;
+-moz-box-shadow: -2px 1px 22px 3px $red;
+box-shadow: -2px 1px 22px 3px $red;
+  transition-duration: 600ms;
+
+  & > p{
+    color:white;
+  }
+}
+
+
+
+
+@include media-small {
+  .tabComponent{
+    width: 200px;
+    &>p{
+      font-size: 15px;
+    }
   }
 }

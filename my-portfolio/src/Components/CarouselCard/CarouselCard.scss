@@ -1,3 +1,6 @@
+@import "../../variables";
+@import "../../mixins";
+
 .carouselCard{
     display: flex;
     flex-direction: column;
@@ -16,5 +19,32 @@
         gap: 30px;
         overflow-x: scroll;
         scroll-snap-type: x proximity;
+        padding-bottom: 20px;
+        &::-webkit-scrollbar{
+            width: 10px;
+            margin-top: 10px;
+            background-color:rgba(0,0,0,.1);
+            border-radius: 10px;
+
+        }
+        &::-webkit-scrollbar-thumb{
+            margin-top: 10px;
+            background-color:$red;
+            border-radius: 10px;
+        }
+    }
+}
+
+@include media-small{
+    .carouselCard{
+        &--list{
+            &::-webkit-scrollbar{
+        display: none;
+
+        }
+        &::-webkit-scrollbar-thumb{
+            display: none;
+        }
+        }
     }
 }
