@@ -1,0 +1,36 @@
+.experienceCard{
+  width: 300px;
+  // height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway, sans-serif;
+    -webkit-box-shadow: 0px 0px 38px -6px rgba(0, 0, 0, 0.237);
+-moz-box-shadow: 0px 0px 38px -6px rgba(0, 0, 0, 0.237);
+box-shadow: 0px 0px 38px -6px rgba(0, 0, 0, 0.237);
+border-radius: 20px;
+  &--role{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &--main{
+    font-weight: bold;
+  }
+  &--company{
+    font-size: 20px;
+  }
+  &--period{
+    color: rgb(168, 168, 168);
+  }
+  &--description{
+    &__item{
+      margin-bottom: 10px;
+    }
+  }
+  &--stack{
+    font-weight: bold;
+  }
+}

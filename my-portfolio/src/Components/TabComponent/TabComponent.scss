@@ -1,0 +1,29 @@
+.tabComponent{
+  width: 200px;
+  height:40px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  transition-duration: 400ms;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.active{
+  background-color: #FF4766;
+  border: none;
+  -webkit-box-shadow: -2px 1px 22px 3px rgba(255,71,102,1);
+-moz-box-shadow: -2px 1px 22px 3px rgba(255,71,102,1);
+box-shadow: -2px 1px 22px 3px rgba(255,71,102,1);
+  transition-duration: 600ms;
+
+  & > p{
+    color:white;
+  }
+}
