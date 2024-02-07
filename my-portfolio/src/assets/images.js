@@ -32,6 +32,7 @@ import artGalleryMobile from './art-gallery-mobile.png'
 import artGallery from  './art gallery.png'
 import ipTracker from './ip-tracker.png'
 import dotsPattern from './dotsPattern.png'
+import personalPhoto from './profilephoto.png'
 
 
 
@@ -70,6 +71,7 @@ const images = {
   artGallery,
   ipTracker,
   dotsPattern,
+  personalPhoto,
 };
 
 export default images

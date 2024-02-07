@@ -6,16 +6,11 @@ import '../../_variables.scss'
 
 export const MainCard = ({name, description, image}) => {
   return (
-    <div
-      className='container'
-    >
-      <img
-      className='pattern'
-        src={images.dotsPattern}
-      />
+    <div className="container">
+      <img className="pattern" src={images.dotsPattern} />
 
       <div className="mainCard">
-        <img className="mainCard--image" src={image} />
+        <img className="mainCard--image" src={images.personalPhoto} />
         <div className="mainCard--info">
           <p className="mainCard--info__name">{name}</p>
           <p className="mainCard--info__description">{description}</p>
@@ -31,6 +26,12 @@ export const MainCard = ({name, description, image}) => {
               iconColor={"white"}
               linkTo={"https://github.com/arenas025"}
               iconName={"logo-github"}
+            />
+            <ContactComponent
+              backgroundColor={"#FF4766"}
+              iconColor={"white"}
+              linkTo={"https://sergioarenas.netlify.app/articles"}
+              iconName={"newspaper-outline"}
             />
             <ContactComponent
               backgroundColor={"#FF4766"}
