@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
-import images from '../../assets/images'
+import images from '../../../assets/images'
 import { CarouselCard } from '../CarouselCard/CarouselCard'
 import { ProjectCard } from '../ProjectCard/ProjectCard'
 import './ContainerCarousel.scss'
+import { useWidth } from '../../hooks/useWidth'
 
 export const ContainerCarousel = () => {
 
-  const [width, setWidth] = useState(window.innerWidth);
-  window.addEventListener("resize", () => {
-    const width = window.innerWidth;
-    setWidth(width);
-  });
+const {width} = useWidth()
+
+
+
+
+
 
   return (
     <div className="containerCarousel">
@@ -36,13 +38,6 @@ export const ContainerCarousel = () => {
           urlRepository={"https://github.com/arenas025/pokedux"}
           imgProject={width < 600 ? images.pokeduxMobile : images.pokedux}
         />
-        {/* <ProjectCard
-              id={8}
-              title= 'E-commerce'
-              urlProject={'https://ecommerce1005.netlify.app/'}
-              urlRepository={'https://github.com/arenas025/e-commerce'}
-              imgProject={images.ecommerce}
-            /> */}
         <ProjectCard
           id={6}
           title="API Weather"
@@ -50,20 +45,6 @@ export const ContainerCarousel = () => {
           urlRepository="https://github.com/arenas025/Api-weather"
           imgProject={width < 600 ? images.weatherMobile : images.weather}
         />
-        {/* <ProjectCard 
-              id={1}
-              title='Netflix clone'
-              urlProject='https://netflix-clone321.netlify.app/'
-              urlRepository='https://github.com/arenas025/Netflix_clone'
-              imgProject={images.netflix}
-            /> */}
-        {/* <ProjectCard 
-              id={2}
-              title='Google clone'
-              urlProject='https://arenas025.github.io/clon_google/'
-              urlRepository='https://github.com/arenas025/clon_google'
-              imgProject={images.google}
-            /> */}
         <ProjectCard
           id={3}
           title="Chat interface"
@@ -73,20 +54,6 @@ export const ContainerCarousel = () => {
             width < 600 ? images.chatInterfaceMobile : images.chatInterface
           }
         />
-        {/* <ProjectCard 
-              id={4}
-              title='Rick and Morty API'
-              urlProject='https://spa-rickandmorty-vainilla.netlify.app/'
-              urlRepository='https://github.com/arenas025/SPA-with-Vanilla-JS'
-              imgProject={images.rickandmorty}
-            /> */}
-        {/* <ProjectCard 
-              id={5}
-              title='Techtrans'
-              urlProject='https://techtrans1234.netlify.app/'
-              urlRepository='https://github.com/arenas025/techtrans'
-              imgProject={images.techtrans}
-            /> */}
         <ProjectCard
           id={7}
           title="Batabit"

@@ -4,17 +4,8 @@ import './App.css';
 
 
 function App() {
-  // const [active, setActive] = useState(false)
   return (
     <div className="App">
-      {/* <Menu active={active}/>
-      <Topbar 
-      active={active} 
-      setActive={setActive}/>
-      <Home/>
-      <Skills/>
-      <Portfolio/>
-      <Contact/> */}
       <MainCard
         image={"../../assets/sin fondo blanca.png"}
         name={"Sergio Arenas"}

@@ -1,16 +1,23 @@
 import React from 'react'
 import { ContactComponent } from '../ContactComponent/ContactComponent';
 import "./MainCard.scss"
-import images from '../../assets/images';
+import images from '../../../assets/images';
 import '../../_variables.scss'
 
 export const MainCard = ({name, description, image}) => {
   return (
     <div className="container">
-      <img className="pattern" src={images.dotsPattern} />
+      <img alt='pattern' className="pattern" src={images.dotsPattern} />
 
       <div className="mainCard">
-        <img className="mainCard--image" src={images.personalPhoto} />
+        <img
+          className="mainCard--image"
+          sizes='(max-width: 710px) 120px,
+            (max-width: 991px) 193px,
+            278px"'
+          alt="personal photo"
+          src={images.personalPhoto}
+        />
         <div className="mainCard--info">
           <p className="mainCard--info__name">{name}</p>
           <p className="mainCard--info__description">{description}</p>

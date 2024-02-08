@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { Card } from '../../Components/Card/Card'
 import { Cards } from '../../Components/Cards/Cards'
-import images from '../../assets/images'
+import images from '../../../assets/images'
 import './Skills.scss'
 
 export const Skills = () => {
