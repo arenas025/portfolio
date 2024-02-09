@@ -6,7 +6,6 @@ import './Skills.scss'
 
 export const Skills = () => {
   return (
-    <Suspense fallback={()=><p>cargando papito</p>}>
       <div className="skills" id="skills">
         <div className="skills--container">
           <Cards>
@@ -22,6 +21,5 @@ export const Skills = () => {
           </Cards>
         </div>
       </div>
-    </Suspense>
   );
 }
