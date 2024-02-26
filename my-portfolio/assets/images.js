@@ -34,8 +34,7 @@ import artGallery from  './art gallery.png'
 import ipTracker from './ip-tracker.png'
 import dotsPattern from './dotsPattern.png'
 import personalPhoto from './profilephoto.png'
-
-
+import cypressLogo from "./cypressLogo.jpeg";
 
 const images = {
   // java,
@@ -73,6 +72,7 @@ const images = {
   ipTracker,
   dotsPattern,
   personalPhoto,
+  cypressLogo,
 };
 
 export default images
