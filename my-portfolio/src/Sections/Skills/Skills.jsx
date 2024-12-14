@@ -9,16 +9,17 @@ export const Skills = () => {
     <div className="skills" id="skills">
       <div className="skills--container">
         <Cards>
-          <Card skill="Javascript" imgSrc={images.javascript} />
-          <Card skill="Typescript" imgSrc={images.typescript} />
-          <Card skill="React" imgSrc={images.react} />
+          <Card skill="Next JS" imgSrc={images.nextJS} />
+          <Card skill="Zustand" imgSrc={images.zustand} />
           <Card skill="Tailwind" imgSrc={images.tailwind} />
           <Card skill="React Native" imgSrc={images.react} />
-          <Card skill="SASS" imgSrc={images.sass} />
-          <Card skill="NestJS" imgSrc={images.nest} />
-          <Card skill="MySql" imgSrc={images.mysql} />
-          <Card skill="Git" imgSrc={images.git} />
+          <Card skill="Zod" imgSrc={images.zod} />
           <Card skill="Cypress" imgSrc={images.cypressLogo} />
+          <Card skill="Typescript" imgSrc={images.typescript} />
+          <Card skill="Express" imgSrc={images.expressJs} />
+          <Card skill="MySql" imgSrc={images.mysql} />
+          <Card skill="Prisma" imgSrc={images.prisma} />
+          <Card skill="Jest" imgSrc={images.jest} />
         </Cards>
       </div>
     </div>

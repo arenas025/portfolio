@@ -57,7 +57,7 @@ justify-content: center;
   }
 }
 &--image{
-  object-fit: contain;
+  object-fit: cover;
   width: auto;
   height: 100%;
   border-radius: 100%;
@@ -71,7 +71,6 @@ justify-content: center;
   .mainCard{
   height: 100%;
   gap: 0px;
-  // height: 550px;
   display: flex;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -106,9 +105,9 @@ justify-content: center;
   }
 }
 &--image{
-  object-fit: contain;
-  width: auto;
-  height: 20%;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
   border: 1px solid $red;
 }
@@ -130,9 +129,9 @@ justify-content: center;
     height: 400px;
     width: 85%;
     &--image{
-    object-fit: contain;
-    width: auto;
-    height: 60%;
+    object-fit: cover;
+ width: 200px;
+  height: 200px;
     border-radius: 100%;
     border: 1px solid $red;
 }

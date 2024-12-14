@@ -9,59 +9,59 @@ export const ContainerCarousel = () => {
 
 const {width} = useWidth()
 
+const projects = [
+  {
+    title: "El bunde distribuidora",
+    urlProject: "https://elbundedistribuidora.com/",
+    urlRepository: "https://github.com/Cesarleops/elbunde",
+    imgProject: width < 600 ? images.bundeMobile : images.bunde,
+  },
+  {
+    title: "IP Address tracker",
+    urlProject: "https://ip-tracker-sa.netlify.app/",
+    urlRepository: "https://github.com/arenas025/ip-tracker",
+    imgProject: width < 600 ? images.ipTrackerMobile : images.ipTracker,
+  },
+  {
+    title: "Art Gallery Slide",
+    urlProject: "https://art-gallery-sa.netlify.app/",
+    urlRepository: "https://github.com/arenas025/art-gallery",
+    imgProject: width < 600 ? images.artGalleryMobile : images.artGallery,
+  },
+  {
+    title: "Chat interface",
+    urlProject: "https://arenas025.github.io/Chat-interface/",
+    urlRepository: "https://github.com/arenas025/Chat-interface",
+    imgProject: width < 600 ? images.chatInterfaceMobile : images.chatInterface,
+  },
+  {
+    title: "Pokedux",
+    urlProject: "https://pokedux123.netlify.app/",
+    urlRepository: "https://github.com/arenas025/pokedux",
+    imgProject: width < 600 ? images.pokeduxMobile : images.pokedux,
+  },
+  {
+    title: "API Weather",
+    urlProject: "https://how-is-the-weather123.netlify.app/",
+    urlRepository: "https://github.com/arenas025/Api-weather",
+    imgProject: width < 600 ? images.weatherMobile : images.weather,
+  },
+];
 
-
-
-
-
-  return (
-    <div className="containerCarousel">
-      <CarouselCard>
+return (
+  <div className="containerCarousel">
+    <CarouselCard>
+      {projects.map(({ imgProject, title, urlProject, urlRepository }, id) => (
         <ProjectCard
-          id={1}
-          title="IP Address tracker"
-          urlProject={"https://ip-tracker-sa.netlify.app/"}
-          urlRepository={"https://github.com/arenas025/ip-tracker"}
-          imgProject={width < 600 ? images.ipTrackerMobile : images.ipTracker}
+          id={id}
+          key={id}
+          imgProject={imgProject}
+          title={title}
+          urlProject={urlProject}
+          urlRepository={urlRepository}
         />
-        <ProjectCard
-          id={2}
-          title="Art Gallery Slide"
-          urlProject={"https://art-gallery-sa.netlify.app/"}
-          urlRepository={"https://github.com/arenas025/art-gallery"}
-          imgProject={width < 600 ? images.artGalleryMobile : images.artGallery}
-        />
-        <ProjectCard
-          id={9}
-          title="Pokedux"
-          urlProject={"https://pokedux123.netlify.app/"}
-          urlRepository={"https://github.com/arenas025/pokedux"}
-          imgProject={width < 600 ? images.pokeduxMobile : images.pokedux}
-        />
-        <ProjectCard
-          id={6}
-          title="API Weather"
-          urlProject="https://how-is-the-weather123.netlify.app/"
-          urlRepository="https://github.com/arenas025/Api-weather"
-          imgProject={width < 600 ? images.weatherMobile : images.weather}
-        />
-        <ProjectCard
-          id={3}
-          title="Chat interface"
-          urlProject="https://arenas025.github.io/Chat-interface/"
-          urlRepository="https://github.com/arenas025/Chat-interface"
-          imgProject={
-            width < 600 ? images.chatInterfaceMobile : images.chatInterface
-          }
-        />
-        <ProjectCard
-          id={7}
-          title="Batabit"
-          urlProject="https://arenas025.github.io/Batabit-project-frontend.github.io/"
-          urlRepository="https://github.com/arenas025/Batabit-project-frontend.github.io"
-          imgProject={width < 600 ? images.batabitMobile : images.batabit}
-        />
-      </CarouselCard>
-    </div>
-  );
+      ))}
+    </CarouselCard>
+  </div>
+);
 }
