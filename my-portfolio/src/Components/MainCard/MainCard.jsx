@@ -4,7 +4,7 @@ import "./MainCard.scss"
 import images from '../../../assets/images';
 import '../../_variables.scss'
 
-export const MainCard = ({name, description, image}) => {
+export const MainCard = ({name, description}) => {
   return (
     <div className="container">
       <img alt='pattern' className="pattern" src={images.dotsPattern} />
